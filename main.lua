@@ -1,17 +1,10 @@
 
--- The code below uses the Corona SDK to get data from a remote server using JSON
--- This code originaly appeard on the Omnigeek website where Rob Miracle provides
--- an excellent tutorial on how to use the Corona SDK with REST api services.
--- This is a complete working copy of the code from that tutorial, which can be
--- found here, http://omnigeek.robmiracle.com/2012/04/15/using-corona-sdk-with-rest-api-services
-
--- To get the code to work, you will need to set up the database and php web application
--- on the remote server. Then you will need to replace the values for the userid,
--- password, and URL below.
-
--- Provided the database and web application are set up properly, everything should work
--- and you should see printed messages in your terminal or log files, depending on 
--- where Corona is writing your testing messages to.
+-- This app code originally appeared on the Omnigeek website where Rob Miracle 
+-- provides an excellent tutorial on how to use the Corona SDK with REST api services.
+-- http://omnigeek.robmiracle.com/2012/04/15/using-corona-sdk-with-rest-api-services
+-- I have made a few addition comments and modifications to the original code, but for the 
+-- most part everything is true to the original tutorial.
+-- See the readme.txt file for more details.
 
 local mime = require("mime")
 local json = require("json")
