@@ -29,7 +29,7 @@ local function loginCallback(event)
         local data = json.decode(event.response)
         
         -- display a result to the user
-        if data.result == 200 then
+        if event.status == 200 then
             -- player logged in okay, display welcome message
             print("Welcome back",data.firstname:gsub("^%l", string.upper))
         else
